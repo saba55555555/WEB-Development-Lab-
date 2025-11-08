@@ -1,0 +1,123 @@
+All task Lab  10 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lab 10 task 1</title>
+    <script src="task1.js"></script>
+</head>
+<body style="text-align:center;"> 
+    <p class="text1">Paragraph with class name</p>
+    <button onclick="changeClass()">Change Class</button>
+</body>
+</html>
+// js
+function changeClass() {
+    let para = document.querySelector(".text1");
+    let value = para.getAttribute("class");
+    alert("Old class name is: " + value);
+    para.setAttribute("class", "new class");
+    alert("Class name changed to: new class");
+}
+task 2
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2</title>
+    <script src="task2.js"></script>
+</head>
+<body style="text-align:center;">
+    <h2>Button Example</h2>
+</body>
+</html>
+// jss
+let login = document.createElement("button");
+login.textContent = "Log In";
+login.style.backgroundColor = "blue";
+login.style.color = "white";
+login.style.fontSize = "20px";
+login.style.padding = "10px 20px";
+task 3 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 3</title>
+<script src="task3.js" defer></script>
+<style>
+
+.text1 {
+    color:  blue;
+    font-size: 20px;
+
+    padding: 10px;
+}
+
+</style>
+</head>
+
+<body style="text-align:center;">
+<p class="text1">This is a styled paragraph</p>
+</body>
+</html>
+// jss
+let newCSS = document.createElement("style");
+newCSS.textContent =
+    `.newClass {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    }`;
+
+document.head.append(newCSS);
+
+let para = document.querySelector(".text1");
+
+para.classList.add("newClass");
+ task 4
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 4</title>
+<script src="task4.js" defer></script>
+</head>
+
+<body style="text-align:center;">  
+<h2>Bulb ON/OFF Example</h2>
+
+<img id="myBulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="150" onclick="toggleBulb()">
+
+</body>
+</html>
+//jss
+function toggleBulb() {
+    let bulb = document.getElementById("myBulb");
+    let src = bulb.getAttribute("src");
+
+    if (src ==="https://www.w3schools.com/js/pic_bulboff.gif") {
+    bulb.setAttribute("src", "https://www.w3schools.com/js/pic_bulbon.gif");
+    } else {
+    bulb.setAttribute("src", "https://www.w3schools.com/js/pic_bulboff.gif");
+    }
+}
+task 5
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 5</title>
+    <script src="task5.js"></script>
+</head>
+<body style="text-align:center;">
+    <p id="para">This paragraph will hide and show.</p>
+    <button onclick="toggleText()">Hide / Show</button>
+</body>
+</html>
+// jss
+function toggleText() {
+    let p = document.getElementById("para");
+    if (p.style.display === "none") {
+    p.style.display = "block";
+    } else {
+    p.style.display = "none";
+    }
+}
+
+document.documentElement.prepend(login);
