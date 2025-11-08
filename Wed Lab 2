@@ -1,0 +1,204 @@
+All task lab 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <title>Form</title>
+ <style>
+   body {
+     
+     animation: fadeIn 2s ease-in-out;
+   }
+
+   h2 {
+     color: #1d72b8;
+     animation: slideDown 1.5s ease;
+   }
+
+   input {
+     border: 1px solid #ccc;
+     transition: border-color 0.3s, box-shadow 0.3s;
+   }
+
+   input:focus {
+     border-color: #1d72b8;
+     box-shadow: 0 0 6px rgba(29,114,184,0.5);
+     outline: none;
+   }
+
+   button {
+     background: #1d72b8;
+     color: white;
+     border: none;
+  
+   }
+
+   button:hover {
+     background: #155a8a;
+     transform: scale(1.05);
+   }
+
+   table {
+     border-collapse: collapse;
+     animation: fadeInUp 2s ease;
+   }
+
+   th, td {
+     border: 1px solid #ccc;
+     transition: background 0.3s;
+   }
+
+   th {
+     background: #f1f1f1;
+   }
+
+   tr:hover td {
+     background: #e0f3ff;
+   }
+
+   /* Animations */
+   @keyframes fadeIn {
+     from { opacity: 0; }
+     to { opacity: 1; }
+   }
+
+   @keyframes slideDown {
+     from { transform: translateY(-30px); opacity: 0; }
+     to { transform: translateY(0); opacity: 1; }
+   }
+
+   @keyframes fadeInUp {
+     from { transform: translateY(20px); opacity: 0; }
+     to { transform: translateY(0); opacity: 1; }
+   }
+ </style>
+</head>
+<body>
+  <h2>Registration form</h2>
+
+  <label>First Name:</label><br>
+  <input type="text" name="First name"><br><br>
+
+  <label>Last Name:</label><br>
+  <input type="text" name="Last name"><br><br>
+
+  <label>City:</label><br>
+  <input type="text" name="Enter your City"><br><br>
+
+  <label>Zip Code:</label><br>
+  <input type="number" name="Enter Zipcode"><br><br>
+
+  <label>Date of birth:</label><br>
+  <input type="date" name="Enter your DOB"><br><br>
+
+  <a href="signinPage.html">
+    <button>Submit</button>
+  </a>
+
+  <table>
+    <tr>
+      <th>Sr No.</th>
+      <th>Student Name</th>
+      <th>Student ID</th>
+      <th>Program</th>
+      <th>Semester</th>
+      <th>CGPA</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ali</td>
+      <td>09876</td>
+      <td>Computer Science</td>
+      <td>3rd</td>
+      <td>3.49</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ahmed</td>
+      <td>12345</td>
+      <td>Software Engineering</td>
+      <td>2nd</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sara</td>
+      <td>56789</td>
+      <td>IT</td>
+      <td>1st</td>
+      <td>3.80</td>
+    </tr>
+  </table>
+</body>
+</html>
+task 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>LoginPage</h2>
+     
+    <label>Username:</label>
+    <input type="text" name="username" ><br><br>
+    <label>Email:</label> 
+    <input type="email" name="email" ><br><br>
+    <label>Password:</label>
+    <input type="password" name="password" ><br><br>
+  <button>Login</button>
+</a>
+</body>
+</html>
+task 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2>User Registration</h2>
+   
+    <label>Username:</label>
+    <input type="text" name="username" ><br><br>
+    <label>Email:</label> 
+    <input type="email" name="email" ><br><br>
+    <label>Password:</label>
+    <input type="password" name="password" ><br><br>
+    <label>Confirm Password:</label>
+    <input type="password" name="password" ><br><br>
+    <h6><label>By clicking the Register button, the user agrees to the <b>Terms and Privacy</b></label></h6>
+   <a href="LoginPage.html">
+  <button>Register</button>
+</a>
+ 
+</body>
+</html>
+task 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+</head>
+<body>
+    <h1>Seasons</h1>
+    
+    <h2>Spring</h2>
+    <p>This can be a really long description of spring, taking up an entire paragraph's worth of space. There can even be several paragraphs.</p>
+    
+    <h2>Summer</h2>
+    <p>You can also have one or more paragraphs describing summer.</p>
+    
+    <h2>Autumn</h2>
+    <p>Add your autumn description here. You can write multiple paragraphs if needed.</p>
+    
+    <h2>Winter</h2>
+    <p>Describe winter in this section. Feel free to expand with additional paragraphs as desired.</p>
+</body>
+</html>
