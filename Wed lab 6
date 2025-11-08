@@ -1,0 +1,86 @@
+All task lab 6
+let bigNum = 44789999999999999999999n;
+console.log(typeof bigNum);
+
+let mySymbol = Symbol("account");
+console.log(typeof mySymbol);
+
+console.log(Number("789"));
+console.log(parseInt("123"));
+console.log(parseFloat("456.78"));
+console.log(String(2025));
+task 2
+const product = {
+    id: 101,
+    name: "Laptop",
+    brand: "HP",
+    price: 95000,
+    inStock: true
+};
+
+console.log("Product Information:");
+console.log("ID:", product.id);
+console.log("Name:", product.name);
+console.log("Brand:", product.brand);
+console.log("Price:", product.price);
+console.log("In Stock:", product.inStock);
+task 3
+const instagramProfile = {
+    username: "Saba nawaz",
+    followers: 588900,
+    following: 390900,
+    posts: 45,
+
+    profilePic: "https://www.instagram.com/"
+};
+
+console.log("Instagram Profile:");
+console.log("Username:", instagramProfile.username);
+console.log("Followers:", instagramProfile.followers);
+console.log("Following:", instagramProfile.following);
+console.log("Posts:", instagramProfile.posts);
+
+console.log("Profile Picture URL:", instagramProfile.profilePic);
+task 4
+let a = 5;
+
+a++;
+console.log("a++ = " + a);
+
+++a;
+console.log("++a = " + a);
+
+a--;
+console.log("a-- = " + a);
+
+--a;
+console.log("--a = " + a);
+task 5
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+</head>
+<body>
+    <h2>Student Grading System</h2>
+
+<script>
+    let score = prompt("Enter your score (0 - 100):");
+    score = Number(score);
+
+    if (score >= 80 && score <= 100) {
+    document.write("Grade: A");
+    } else if (score >= 70 && score <= 79) {
+    document.write("Grade: B");
+    } else if (score >= 60 && score <= 69) {
+    document.write("Grade: C");
+    } else if (score >= 50 && score <= 59) {
+    document.write("Grade: D");
+    } else if (score >= 0 && score <= 49) {
+    document.write("Grade: F");
+    } else {
+    document.write("Invalid score!");
+    }
+    </script>
+</body>
+</html>
