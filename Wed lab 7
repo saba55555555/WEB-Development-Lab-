@@ -1,0 +1,69 @@
+All task Lab 7 
+
+let values = [3, 6, 11, 20, 25, 42];
+
+for (let item of values) {
+    if (item % 2 == 0) {
+    console.log("Even:", item);
+    }
+}
+task 2
+let data = [12, 55, 4, 87, 19, 2];
+let largest = data[0];
+let smallest = data[0];
+
+for (let val of data) {
+    if (val > largest) {
+    largest = val;
+    }
+    if (val < smallest) {
+    smallest = val;
+    }
+}
+
+console.log("Maximum =", largest);
+console.log("Minimum =", smallest);
+task 3
+let cities = ["lahore", "karachi", "islamabad"];
+
+for (let place of cities) {
+    console.log(place.toUpperCase());
+}
+task 4
+let companies = ["Lamda", "CodeZone", "DevPoint", "WebTech"];
+
+companies.shift();
+
+companies.splice(1, 1, "NextGen");
+
+companies.push("AppWorks");
+
+console.log(companies);
+task 5
+function findVowels(word) {
+    let letters = "aeiouAEIOU";
+    let total = 0;
+
+    for (let ch of word) {
+    if (letters.includes(ch)) {
+    total++;
+    }
+    }
+    return total;
+}
+
+console.log(findVowels("Education"));
+task 6
+let vowelCounter = (text) => {
+    let letters = "aeiouAEIOU";
+    let total = 0;
+
+    for (let c of text) {
+    if (letters.includes(c)) {
+        total++;
+    }
+    }
+    return total;
+};
+
+console.log(vowelCounter("JavaScript"));
