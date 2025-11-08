@@ -1,0 +1,226 @@
+All task Lab 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loader</title>
+  <style>
+    body {
+      
+      height: 100vh;
+    }
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 6px solid #32acc7;
+      border-top: 6px solid rgb(44, 81, 245);
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+ 
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+</body>
+</html>
+task 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rainbow Text</title>
+  <style>
+    h1 {
+   
+     animation: rainbow 5s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0%   { color: red; }
+      25%  { color: orange; }
+      50%  { color: rgb(15, 245, 15); }
+      75%  { color: blue; }
+      100% { color: purple; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Rainbow Text Animation</h1>
+</body>
+</html>
+task 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click page</title>
+</head>
+<style>
+    button {
+     
+      background: rgb(97, 234, 230);
+      color: rgb(12, 12, 12);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: all 0.5s ease; 
+     
+    }
+    button:hover {
+      background: rgb(163, 236, 139);
+      transform: scale(1.23); /
+    }
+  </style>
+<body>
+    <button>Click me</button>
+</body>
+</html>
+task 4
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2 - Traffic Lights</title>
+  <style>
+    
+    .light {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+     .red { background: red; }
+.yellow { background: yellow; } 
+.green { background: green; }
+</style>
+</head>
+<body>
+<div class="traffic-light">
+<div class="light red"></div>
+<div class="light yellow"></div>
+<div class="light green"></div>
+</div>
+</body>
+</html>
+task 5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      animation: fadeIn 2s ease-in-out; /* heading animation */
+    }
+    .form-container {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      width: 400px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease; /* smooth transition */
+    }
+    .form-container:hover {
+      transform: scale(1.03); /* zoom effect on hover */
+    }
+    .form-container label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.3s, box-shadow 0.3s; /* input transition */
+    }
+    .form-container input:focus,
+    .form-container select:focus,
+    .form-container textarea:focus {
+      border-color: #1d72b8;
+      box-shadow: 0 0 6px rgba(29,114,184,0.5);
+      outline: none;
+    }
+    .form-container button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background: #1d72b8;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s; /* button transition */
+    }
+    .form-container button:hover {
+      background: #155a8a;
+      transform: scale(1.05); /* button hover animation */
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Registration</h2>
+  <div class="form-container">
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Enter name">
+
+      <label>Education</label>
+      <input type="text" placeholder="Enter education">
+
+      <label>Address</label>
+      <input type="text" placeholder="Enter address">
+
+      <label>Gender</label>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <label>Age</label>
+      <input type="number" placeholder="Enter age">
+
+      <label>Upload Photo</label>
+      <input type="file">
+
+      <label>About Yourself</label>
+      <textarea rows="3"></textarea>
+
+      <label>
+        <input type="checkbox"> I agree to terms and conditions
+      </label>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
