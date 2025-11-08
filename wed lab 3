@@ -1,0 +1,455 @@
+ALL task lab 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login Page</h2>
+
+    <label>Username:</label>
+    <input type="text" name="username">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Password:</label>
+    <input type="password" name="password">
+
+    <button>Login</button>
+  </div>
+</body>
+</html>
+Style login.css
+
+
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #9caeef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #848d8f;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #010d0c;
+  font-size: 22px;
+}
+
+.login-box label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #010f01;
+  font-size: 14px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 6px #0077cc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0077cc;
+  color: rgb(231, 229, 135);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #005fa3;
+}
+Sign .html code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="signin.css">  <!-- Linking CSS -->
+</head>
+<body>
+  <div class="signin-box">
+    <h2>SignIn Page</h2>
+
+    <label>Username:</label>
+    <input type="text" name="username">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Password:</label>
+    <input type="password" name="password">
+
+    <a href="login.html">
+      <button>Sign In</button>
+    </a>
+  </div>
+</body>
+</html>
+
+Sign .css code
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ede77c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form, .signin-box {
+  background: #98eede;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0c0c0c;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #0e0d0d;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ed9393;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #63ea73;
+  box-shadow: 0 0 5px #cbcbc8;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0073e6;
+  color: rgb(169, 122, 122);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #86888a;
+}
+task 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar & Slider</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <h1> Islamic
+    
+  </h1>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="images/slide1.jpg" alt="Slide 1">
+      <img src="images/slide1 - Copy (2).jpg" alt="Slide 2">
+      <img src="images/slide1.jpg" alt="Slide 3">
+    </div>
+  </div>
+    </div>
+
+</body>
+</html>
+
+Style.css
+
+
+ body {
+            margin: 0;
+            font-family: Arial;
+            background: #6ee1d9;
+        }
+.navbar {
+  display: flex;                
+  justify-content: space-around;
+  align-items: center;
+  background: #e30ce3;
+  padding: 10px;
+}
+
+.navbar a {
+  color: rgb(1, 165, 64);
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background: #eb13ff;
+  border-radius: 5px;
+}
+.navbar {
+  display: flex;                
+  justify-content: space-around;
+  align-items: center;
+  background: #20e60e;
+  padding: 10px;
+}
+
+.navbar a {
+  color: rgb(72, 3, 62);
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background: #0b7bd0;
+  border-radius: 5px;
+  }
+
+
+
+.slider {
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(15, 26, 240, 0.3);
+}
+
+.slides {
+  display: flex;
+  width: 300%; 
+  animation: slide 9s infinite;
+}
+
+.slides img {
+  width: 100%;
+}
+
+@keyframes slide {
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+
+}
+task 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Header</h1>
+  </div>
+
+  <!-- Main layout -->
+  <div class="main">
+
+    <!-- Left Sidebar -->
+    <div class="sidebar-left">
+      <img src="logo.png" alt="University Logo" width="120"><br><br>
+      <h3>Courses:</h3>
+      <a href="#">WAD</a><br>
+      <a href="#">Enterprise</a><br>
+      <a href="#">Database</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h2>How to learn web development?</h2>
+      <p>
+        Every Web Developer must have a basic understanding of HTML, CSS, and JavaScript.
+        Responsive Web Design is used in all types of modern web development.
+        ECMAScript 5 (JavaScript 5) is supported in all modern browsers.
+        Take a good look at it, especially the new array functions.
+      </p>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="sidebar-right">
+      <img src="logo.png" alt="University Logo" width="120">
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+</body>
+</html>
+Csss.html
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cfcfcf; /* grey background */
+  color: #333;
+  max-width: 1366px; /* laptop screen width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+header {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 28px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Body layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 500px; /* ensures body fills space on laptop screen */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  padding: 15px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: blue;
+  text-decoration: none;
+}
+
+/* Main content */
+.content {
+  width: 55%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Rightbar */
+.rightbar {
+  width: 20%;
+  text-align: center;
+}
+
+.rightbar img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
